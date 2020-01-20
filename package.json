@@ -45,7 +45,7 @@
     "imagemin-pngquant": "^5.0.0",
     "install": "^0.10.1",
     "node-bourbon": "^4.2.8",
-    "npm": "^5.5.1",
+    "npm": "^6.13.4",
     "postcss-data-packer": "^1.2.3",
     "postcss-flexbugs-fixes": "^2.1.0",
     "rollup-plugin-babel": "^3.0.2",
