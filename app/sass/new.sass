@@ -1,0 +1,476 @@
+@import "bourbon"
+
+.page_black-friday, .page_new-year
+	
+	.main-menu
+		.logo
+			display: flex !important
+			align-items: center !important
+
+			
+
+			a
+				display: block
+
+	.main-menu
+		ul
+			position: relative
+
+			&:before
+				content: ''
+
+.page_new-year
+	.logo
+		svg
+			path
+				fill: #fff !important
+				
+.plate-desc__title, footer .bot .copy
+	a
+		color: #5f9ae3 !important
+
+
+// .inner-page
+// 	main
+// 		.bread-crumbs
+// 			padding: 20px 0 6px
+// 		h1
+// 			font-size: 1.7rem
+
+// 		section
+// 			margin: 15px 0 0
+
+// header
+// 	z-index: 99999
+
+.plate-desc__status
+	flex-wrap: wrap
+
+div[class*="status--status1"]
+	margin-bottom: 10px
+
+
+.main-menu
+	.current
+		display: none
+
+.inner-page main, .pg-wrap, body.inner-page
+	background: #e7eaed !important
+
+
+.page_new-year
+	.wrapper.unpos
+		background-color: #d71a53
+	header .main-menu
+		background-color: #d71a53
+	header .main-menu > ul > li.important > a
+		background-color: #d71a53
+
+	header .main-menu>ul>li.current
+		background-color: #d71a53
+
+	.arrow-btn, .paginator li.current a:not([class=left]):not([class=right])
+		background-color: #d71a53
+
+	.bottom-text a
+		color: #d71a53
+	header .main-menu > ul > li:hover
+		background: #c1164a
+
+
+
+.page_black-friday
+	.wrapper.unpos
+		background-color: #311e3e
+	header .main-menu
+		background-color: #311e3e
+	header .main-menu > ul > li.important > a
+		background-color: #57356f
+
+	header .main-menu>ul>li.current
+		background-color: #311e3e
+
+	.arrow-btn, .paginator li.current a:not([class=left]):not([class=right])
+		background-color: #57356f
+
+	.bottom-text a
+		color: #57356f
+	header .main-menu > ul > li:hover
+		background: #57356f
+
+.plate__right
+	height: 245px
+
+.new-circles
+	bottom: 0 !important
+	right: 0 !important
+	top: initial !important
+	left: initial !important
+
+.new-circles
+	z-index: 2 !important
+.banner-list
+	.desktop
+		> a
+			position: absolute
+			cursor: pointer
+			z-index: 10
+	.mobile
+		> a
+			position: absolute
+			z-index: 10
+			transform: translateX(-50%)
+
+.page_february23
+	.wrapper.unpos
+		background-color: #466e49
+	header .main-menu
+		background-color: #466e49
+	header .main-menu > ul > li.important > a
+		background-color: #4f7952
+	.arrow-btn, .paginator li.current a:not([class=left]):not([class=right])
+		background-color: #466e49
+
+	.bottom-text a
+		color: #466e49
+	header .main-menu > ul > li:hover
+		background: #4f7952
+
+.banner-list
+	position: relative
+	z-index: 5
+	overflow: hidden
+
+	img
+		display: block
+
+.bottom-text
+	a
+		color: #e00f36
+
+.paginator li.current a:not([class=left]):not([class=right])
+	background: #e00f36
+
+header .main-menu li.dottes>a
+	border: none
+
+@media screen and (min-width: 660px)
+	.banner-list
+
+		img
+			width: 100%
+			transform: translate3d(-.5px, 0, 0)
+
+.wrapper.unpos, .arrow-btn
+	background-color: #e00f36
+
+header
+
+	.main-menu
+		background: #e00f36
+
+		> ul
+
+			> li
+
+				&.important
+
+header .main-menu>ul>li.current,
+header .main-menu>ul>li.important>a,
+header .main-menu>ul>li:hover
+	background: #f90e3a
+
+#catalog.plates .content
+	background-color: transparent
+
+#catalog.plates .content div:not([class])
+	margin: 0 0 -35px -29px
+
+.plate
+	background: #fff
+
+	&-buy
+
+		&__price
+			flex-direction: column-reverse
+
+	&__img
+		height: 226px
+		display: flex
+		align-items: center
+		justify-content: center
+
+		img
+			max-height: 100%
+
+.plates
+
+	&__one
+		background: #fff
+		border-radius: 6px
+		width: calc((100% - 30px * 4) / 4)
+		margin: 0 0 35px 29px
+		border: none !important
+
+.title-sale-section
+	text-align: center
+	width: 100%
+	margin-bottom: rem(36)
+	font-size: rem(25)
+	color: #151515
+
+.inner-page main section
+	margin: rem(33) 0 0
+
+footer
+	box-shadow: none !important
+
+
+
+.new-circles__circle
+	background: #8c24bf !important
+	font-size: rem(11)
+	text-transform: uppercase
+	&:before
+		content: ""
+		+size(36px)
+		background: url('../img/ico-gift.png') no-repeat center
+.gift-text-page
+	a
+		white-space: nowrap;
+
+.new-circles__circle-desc
+	position: absolute;
+	right: 0;
+	bottom: 100%;
+	top: initial !important
+	left: initial !important
+	color: #000;
+	text-transform: none;
+	font-size: .9375rem;
+	display: inline-block;
+	min-width: 310px;
+	text-align: left;
+	padding-bottom: 20px;
+	-webkit-transition: opacity .5s ease;
+	transition: opacity .5s ease;
+	pointer-events: none;
+	opacity: 0;
+	font-weight: 300;
+.new-circles__circle-desc:before
+	content: "";
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	background: #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	right: 28px;
+	bottom: 10px;
+	top: initial !important
+	left: initial !important
+
+// .admin
+.plate-desc
+	&__status
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex: none
+		margin: 15px 0 0
+
+
+
+	.economy
+		padding: 11px 13px 9px
+		font-size: rem(14)
+		line-height: 1
+		background: #e0648b !important
+		border-radius: 4px
+		color: #fff
+		display: flex
+		margin: 0
+		flex: none
+		align-items: flex-end
+
+		&:before
+			display: none
+
+.ecomony-number
+	border-left: 0
+	background: transparent
+	padding: 0
+	font-weight: bold
+	font-size: rem(16)
+	margin-left: 5px
+
+.plate-desc__buy
+	.economy.price-economy
+		display: none
+
+.plate-buy__price
+	flex-direction: column-reverse
+
+.plate-price--last
+	color: rgba(#000, .5)
+
+.top-banners__banner--right
+	.plate-desc__status
+		flex-direction: row !important
+
+		.economy
+			padding: 11px 13px 9px !important
+			font-size: rem(14)
+			line-height: 1
+			background: #e0648b !important
+			border-radius: 4px
+			color: #fff
+			display: flex
+			margin: 0
+			flex: none
+			width: auto
+			align-items: flex-end
+
+
+			&:before
+				display: none
+
+.status
+	white-space: nowrap
+
+#catalog h2
+	display: none
+
+
+.inner-page footer
+	margin-top: 30px
+
+
+@media screen and (max-width: 1600px)
+
+	.banner-list .desktop > a
+		// left: 730px !important
+		left: 50% !important
+		transform: translateX(-50%)
+		top: 50px !important
+@media screen and (max-width: 1500px)
+	
+	.page_black-friday
+	
+		.main-menu
+			.logo
+				margin-left: 30px
+
+@media screen and (max-width: 1440px)
+
+	.banner-list .desktop > a
+		// left: 650px !important
+		top: 40px !important
+
+@media screen and (max-width: 1400px)
+	.plates
+
+		&__one
+			width: calc((100% - 30px * 3) / 3)
+@media screen and (max-width: 1366px)
+
+	.banner-list .desktop > a
+		// left: 610px !important
+		top: 40px !important
+
+@media screen and (max-width: 1280px)
+
+	.banner-list .desktop > a
+		// left: 565px !important
+		top: 40px !important
+
+	header .main-menu .dropdown:after
+		display: none
+
+
+
+
+
+
+@media screen and (max-width: 1200px)
+	
+	.page_black-friday .main-menu .logo
+		margin-left: 0
+
+
+
+@media screen and (max-width: 1000px)
+	.plates
+
+		&__one
+			width: calc((100% - 30px * 2) / 2)
+
+	.page_black-friday .main-menu .logo
+		margin-left: 30px
+
+	header .main-menu
+		display: block
+		padding: 0 !important
+
+		li:not(.important)
+			display: none
+
+		li.important
+			flex: none
+			margin-left: auto
+
+			a
+				padding: 0 15px
+				width: auto
+
+	main
+		display: flex
+		flex-direction: column
+
+	.sale-catalog-menu
+		order: -1
+
+	.wrapper.unpos
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding-left: 15px
+
+	header .burger span
+		background: #fff
+
+@media screen and (max-width: 660px)
+
+	.page_black-friday .main-menu .logo
+		margin: 0 auto
+
+
+	.new-circles__circle-desc
+		min-width: 270px
+
+	.banner-list
+		.desktop
+			display: none
+
+		img
+			width: 100%
+
+	#catalog.plates .content div:not([class])
+		margin: 0 0 -35px 0
+
+	.plates
+		margin-left: 0
+
+		&__one
+			width: 100%
+			margin-left: 0
+
+@media screen and (min-width: 660px)
+	.banner-list
+		.mobile
+			display: none
+
+@media only screen and (max-width: 374px)
+
+	.inner-page header .main-menu
+		min-width: auto
