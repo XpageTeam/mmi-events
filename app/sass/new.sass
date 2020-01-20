@@ -1,6 +1,6 @@
 @import "bourbon"
 
-.page_black-friday, .page_new-year
+.page_black-friday, .page_new-year, .page_premium
 	
 	.main-menu
 		.logo
@@ -19,7 +19,7 @@
 			&:before
 				content: ''
 
-.page_new-year
+.page_new-year, .page_premium
 	.logo
 		svg
 			path
@@ -29,7 +29,7 @@
 	a
 		color: #5f9ae3 !important
 
-
+// 
 // .inner-page
 // 	main
 // 		.bread-crumbs
@@ -97,6 +97,39 @@ div[class*="status--status1"]
 		color: #57356f
 	header .main-menu > ul > li:hover
 		background: #57356f
+
+.page_premium
+	&.inner-page
+		background: #0e0e0e!important
+		
+		main
+			background: #0e0e0e!important
+
+	.wrapper.unpos
+		background-color: #42bbb8
+	header .main-menu
+		background-color: #42bbb8
+	header .main-menu > ul > li.important > a
+		background-color: #47ccc8
+
+	header .main-menu>ul>li.current
+		background-color: #42bbb8
+
+	.arrow-btn, .paginator li.current a:not([class=left]):not([class=right])
+		background-color: #47ccc8
+
+	.bottom-text a
+		color: #47ccc8
+	header .main-menu > ul > li:hover
+		background: #47ccc8
+	
+	footer
+		color: #fff
+
+		.bot
+			background-color: #404040
+
+
 
 .plate__right
 	height: 245px
