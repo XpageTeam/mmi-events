@@ -1,3 +1,7 @@
+header .main-menu .dropdown:after {
+  right: 15px;
+}
+
 .page_black-friday .main-menu .logo, .page_new-year .main-menu .logo, .page_premium .main-menu .logo, .page_lovesale .main-menu .logo {
   display: flex !important;
   align-items: center !important;
@@ -37,6 +41,14 @@ div[class*="status--status1"] {
 
 .inner-page main, .pg-wrap, body.inner-page {
   background: #e7eaed !important;
+}
+
+.page_lovesale.inner-page {
+  background: #fff3f3 !important;
+}
+
+.page_lovesale .pg-wrap, .page_lovesale main {
+  background: #fff3f3 !important;
 }
 
 .page_new-year .wrapper.unpos {
@@ -137,6 +149,14 @@ div[class*="status--status1"] {
 
 .page_premium footer .bot {
   background-color: #404040;
+}
+
+.page_premium .pg-wrap {
+  background-color: #0e0e0e !important;
+}
+
+.page_premium .paginator a {
+  color: #fff;
 }
 
 .plate__right {
@@ -426,6 +446,9 @@ footer {
 @media screen and (max-width: 1500px) {
   .page_black-friday .main-menu .logo {
     margin-left: 30px;
+  }
+  header .main-menu .dropdown:after {
+    right: 5px;
   }
 }
 

@@ -1,5 +1,8 @@
 @import "bourbon"
 
+header .main-menu .dropdown:after
+	right: 15px
+
 .page_black-friday, .page_new-year, .page_premium, .page_lovesale
 	
 	.main-menu
@@ -57,6 +60,12 @@ div[class*="status--status1"]
 .inner-page main, .pg-wrap, body.inner-page
 	background: #e7eaed !important
 
+.page_lovesale
+	&.inner-page
+		background: #fff3f3!important
+
+	.pg-wrap, main
+		background: #fff3f3!important
 
 .page_new-year
 	.wrapper.unpos
@@ -128,6 +137,12 @@ div[class*="status--status1"]
 
 		.bot
 			background-color: #404040
+
+	.pg-wrap
+		background-color: #0e0e0e!important
+
+	.paginator a
+		color: #fff
 
 
 
@@ -393,6 +408,9 @@ footer
 		.main-menu
 			.logo
 				margin-left: 30px
+
+	header .main-menu .dropdown:after
+		right: 5px
 
 @media screen and (max-width: 1440px)
 
